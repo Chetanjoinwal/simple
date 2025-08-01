@@ -2,9 +2,15 @@ html {
   box-sizing: border-box;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  background: #fff;
+  color: #000;
 }
 
 .container {
@@ -129,7 +135,6 @@ body {
   width: 80px;
   top: -35px;
   left: 41.5%;
-  /* transform: scale(0.1); */
 }
 
 .baloons img {
@@ -158,59 +163,15 @@ body {
   z-index: -1;
 }
 
-.eight svg:nth-child(1) {
-  top: 7vh;
-  left: 5vw;
-  fill: #bd6ecf;
-}
-
-.eight svg:nth-child(2) {
-  top: 23vh;
-  left: 35vw;
-  fill: #7dd175;
-}
-
-.eight svg:nth-child(3) {
-  top: 33vh;
-  left: 23vw;
-  fill: #349d8b;
-}
-
-.eight svg:nth-child(4) {
-  top: 43vh;
-  left: 57vw;
-  fill: #347a9d;
-}
-
-.eight svg:nth-child(5) {
-  top: 68vh;
-  left: 7vw;
-  fill: #c66053;
-}
-
-.eight svg:nth-child(6) {
-  top: 42vh;
-  left: 77vw;
-  fill: #bfaa40;
-}
-
-.eight svg:nth-child(7) {
-  top: 68vh;
-  left: 83vw;
-  fill: #e3bae8;
-}
-
-.eight svg:nth-child(8) {
-  top: 86vh;
-  left: 37vw;
-  fill: #8762cb;
-}
-
-.eight svg:nth-child(9) {
-  top: 94vh;
-  left: 87vw;
-  fill: #9a90da;
-}
+.eight svg:nth-child(1) { top: 7vh; left: 5vw; fill: #bd6ecf; }
+.eight svg:nth-child(2) { top: 23vh; left: 35vw; fill: #7dd175; }
+.eight svg:nth-child(3) { top: 33vh; left: 23vw; fill: #349d8b; }
+.eight svg:nth-child(4) { top: 43vh; left: 57vw; fill: #347a9d; }
+.eight svg:nth-child(5) { top: 68vh; left: 7vw; fill: #c66053; }
+.eight svg:nth-child(6) { top: 42vh; left: 77vw; fill: #bfaa40; }
+.eight svg:nth-child(7) { top: 68vh; left: 83vw; fill: #e3bae8; }
+.eight svg:nth-child(8) { top: 86vh; left: 37vw; fill: #8762cb; }
+.eight svg:nth-child(9) { top: 94vh; left: 87vw; fill: #9a90da; }
 
 .wish-hbd {
   font-size: 3em;
@@ -234,156 +195,24 @@ body {
   cursor: pointer;
 }
 
-/* Media Queries */
+/* Responsive Tweaks */
 @media screen and (max-height: 1000px) {
-  .six .hat {
-    left: 40%;
-  }
+  .six .hat { left: 40%; }
 }
 
 @media screen and (max-height: 800px) {
-  .six .hat {
-    left: 37%;
-  }
+  .six .hat { left: 37%; }
 }
 
 @media screen and (max-height: 700px) {
-  .six .hat {
-    left: 32%;
-  }
+  .six .hat { left: 32%; }
 }
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
-  .six .hat {
-    left: 32%;
-  }
+  .six .hat { left: 32%; }
 }
 
-@media screen and (max-width: 500px) {
-  .container {
-    width: 90%;
-  }
-
-  .four .text-box {
-    width: 90%;
-  }
-
-  .text-box .fake-btn {
-    right: 5px;
-    bottom: -38px;
-  }
-
-  .idea-5 span {
-    display: block;
-  }
-
-  .idea-6 span {
-    font-size: 10rem;
-  }
-
-  .six .hat {
-    width: 50px;
-    top: -20px;
-  }
-
-  .wish-hbd {
-    font-size: 2.2em;
-  }
-
-  .wish h5 {
-    font-size: 1.4rem;
-  }
-
-  .nine p {
-    font-size: 1.5rem;
-    font-weight: lighter;
-  }
-}
-
-
-
-/* Enhanced Mobile-Responsive Styles */
-@media screen and (max-width: 500px) {
-  body {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  .one {
-    font-size: 2.5rem;
-  }
-
-  .two {
-    font-size: 1rem;
-    padding: 0 10px;
-  }
-
-  .three {
-    font-size: 2rem;
-  }
-
-  .four .text-box {
-    width: 90%;
-    padding: 8px;
-    font-size: 0.9rem;
-  }
-
-  .text-box .fake-btn {
-    padding: 4px 6px;
-    font-size: 0.8rem;
-  }
-
-  .five p {
-    font-size: 1.5rem;
-    padding: 0 10px;
-  }
-
-  .idea-5 {
-    font-size: 2.5rem;
-  }
-
-  .idea-6 span {
-    font-size: 6rem;
-  }
-
-  .six img {
-    max-width: 80%;
-  }
-
-  .six .hat {
-    width: 40px;
-    top: -18px;
-    left: 34%;
-  }
-
-  .wish-hbd {
-    font-size: 1.8em;
-    padding: 0 10px;
-  }
-
-  .wish h5 {
-    font-size: 1.2rem;
-    padding: 0 10px;
-  }
-
-  .nine p {
-    font-size: 1.2rem;
-    padding: 0 10px;
-  }
-
-  .baloons img {
-    width: 40px;
-  }
-
-  .eight svg {
-    width: 18px;
-  }
-}
-
-
-
-
-/* Improved Mobile-Responsive Design with Gradient Background */
+/* Enhanced Mobile Responsive Design */
 @media screen and (max-width: 500px) {
   body {
     font-size: 14px;
@@ -409,7 +238,7 @@ body {
   }
 
   .one {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
   }
 
@@ -456,6 +285,10 @@ body {
   .idea-5 {
     font-size: 2.5rem;
     padding: 0 10px;
+  }
+
+  .idea-5 span {
+    display: block;
   }
 
   .idea-6 span {
@@ -510,7 +343,6 @@ body {
     display: inline-block;
   }
 
-  /* Optional: add smooth transitions for a polished feel */
   * {
     transition: all 0.3s ease;
   }
