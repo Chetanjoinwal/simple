@@ -298,3 +298,83 @@ body {
     font-weight: lighter;
   }
 }
+
+
+
+/* Enhanced Mobile-Responsive Styles */
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .one {
+    font-size: 2.5rem;
+  }
+
+  .two {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .three {
+    font-size: 2rem;
+  }
+
+  .four .text-box {
+    width: 90%;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .text-box .fake-btn {
+    padding: 4px 6px;
+    font-size: 0.8rem;
+  }
+
+  .five p {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+
+  .idea-5 {
+    font-size: 2.5rem;
+  }
+
+  .idea-6 span {
+    font-size: 6rem;
+  }
+
+  .six img {
+    max-width: 80%;
+  }
+
+  .six .hat {
+    width: 40px;
+    top: -18px;
+    left: 34%;
+  }
+
+  .wish-hbd {
+    font-size: 1.8em;
+    padding: 0 10px;
+  }
+
+  .wish h5 {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+
+  .nine p {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+
+  .baloons img {
+    width: 40px;
+  }
+
+  .eight svg {
+    width: 18px;
+  }
+}
